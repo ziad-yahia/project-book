@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="pexels-abby-chung-1106468.jpg" />
+
+    <title>Book Form</title>
+    <style>
+      body {
+        background-image: url("pexels-pixabay-256455.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: contain;
+
+        z-index: 1;
+      }
+
+      .for {
+        width: 400px;
+        height: 600px;
+        background-color: #eee;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px black;
+        margin-left: 50px;
+        padding: 10px;
+      }
+      input {
+        margin: 5px;
+        border-radius: 8px;
+        border: none;
+      }
+      input:hover {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="bookIntro.html" method="POST" outocomplete="on" class="for">
+      <fieldset id="f">
+        <legend style="text-align: center; font-size: 30px">
+          Enter Your Informtion
+        </legend>
+
+        <label for="first"> First Name:</label>
+        <input
+          id="first"
+          type="text"
+          placeholder="Enter first Name"
+          required
+          name="text"
+          value=""
+          maxlength="15"
+        />
+        <br />
+        <label for="second"> second Name:</label>
+        <input
+          id="second"
+          type="text"
+          placeholder="Enter first Name"
+          required
+          name="text"
+          value=""
+          maxlength="15"
+        />
+        <br />
+        <br />
+        <label for="email"> Enter Your Email:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Email"
+          required
+          name="email"
+          value=""
+        />
+        <br />
+        <label for="password"> Enter Your password:</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter password"
+          required
+          name="password"
+          value=""
+          maxlength="15"
+        />
+        <br />
+        <br />
+        <label for="tel">Enter Your phone Number</label>
+        <input
+          id="tel"
+          type="tel"
+          placeholder="enter phone number"
+          name="tel"
+          value=""
+          required
+          maxlength="13"
+        />
+        <label>Enter Your Age</label>
+        <input
+          type="number"
+          min="12"
+          max="80"
+          name="number"
+          value=""
+          required
+          placeholder=" Age"
+        />
+        <br /><br />
+
+        <label>Choose The Types OF Book You Prefer it :</label>
+        <select required name="work">
+          <optgroup label="Romantics">
+            <option value="Arabic Stories">Arabic Stories</option>
+            <option value="ENglish Stories" selected>ENglish Stories</option>
+            <option value=" French Stories">French Stories</option>
+          </optgroup>
+          <optgroup label="History ">
+            <option value="Arabic Stories">Arabic Stories</option>
+            <option value="ENglish Stories">ENglish Stories</option>
+            <option value=" French Stories">French Stories</option>
+          </optgroup>
+        </select>
+
+        <br />
+        <br />
+        <label>Enter Your gender:</label>
+        <br />
+        <label>male:</label>
+        <input type="radio" name="gender" value="" required />
+
+        <label>female:</label>
+        <input type="radio" name="gender" value="" required />
+        <label>Custom:</label>
+        <input type="radio" name="gender" value="" required checked />
+        <br />
+        <label>Date:</label>
+        <input type="date" name="date" value="" />
+        <br />
+        <label>Your Favourite Color:</label>
+        <input type="color" name="color" value="" />
+
+        <br /><br />
+        <label for="C.V">Send Your C.V :</label>
+        <input type="file" multiple name="C.V" value="" id="C.V" class="file" />
+
+        <br />
+        <br />
+        <input type="reset" />
+        <input type="submit" name="submit" value="back" />
+      </fieldset>
+    </form>
+  </body>
+</html>
